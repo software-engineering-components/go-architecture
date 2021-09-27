@@ -5,9 +5,7 @@ import (
     "net/http"
 )
 
-func getServerTime(w http.ResponseWriter, req *http.Request) {
-	
-}
+func getServerTime(w http.ResponseWriter, req *http.Request) {}
 
 func main() {
     http.HandleFunc("/time", getServerTime)
