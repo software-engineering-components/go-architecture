@@ -1,13 +1,13 @@
 package main
 
 import (
-    "fmt"
-    "net/http"
+  "fmt"
+  "net/http"
 )
 
 func getServerTime(w http.ResponseWriter, req *http.Request) {}
 
 func main() {
-    http.HandleFunc("/time", getServerTime)
-    http.ListenAndServe(":8795", nil)
+  http.HandleFunc("/time", getServerTime)
+  http.ListenAndServe(":8795", nil)
 }
