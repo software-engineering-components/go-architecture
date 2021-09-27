@@ -5,9 +5,9 @@ import (
     "net/http"
 )
 
-func hello(w http.ResponseWriter, req *http.Request) {}
+func getServerTime(w http.ResponseWriter, req *http.Request) {}
 
 func main() {
-    http.HandleFunc("/time", headers)
+    http.HandleFunc("/time", getServerTime)
     http.ListenAndServe(":8795", nil)
 }
